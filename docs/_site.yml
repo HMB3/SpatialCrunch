@@ -1,0 +1,12 @@
+
+name: "Wet Tropics Niches"
+
+output_dir: 'docs'
+  # html_document:
+  #   theme: lumen
+  #   highlight: tango
+  #   css: styles.css
+  #   self_contained: true
+
+
+

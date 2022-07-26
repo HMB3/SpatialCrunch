@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>SpatialCrunch</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#SpatialCrunch" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SpatialCrunch</a> 
+    <a href="#About" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#Spatial Analyses" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Spatial Analyses</a> 
+    <a href="#Functional programming" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Functional programming</a> 
+	<a href="#Data Integration" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Data Integration</a>
+    <a href="#Reproducible Reporting" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reproducible Reporting</a>
+    <a href="#Collaborative Research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborative Research</a>
+	<a href="#Statistical Modelling" onclick="w3_close()"  class="w3-bar-item w3-button w3-hover-white">Statistical Modelling</a>	
+    <a href="#Biodiversity Modelling" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Biodiversity Modelling</a>	
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>SpatialCrunch</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="SpatialCrunch">
+    <h1 class="w3-jumbo"><b>SpatialCrunch</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Spatial Data Analysis for public good</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="w3-container" id="About" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>SpatialCrunch provides spatial data analysis services, focusing on public interest projects.</p>
+    <p>We are an interdisciplinary team of spatial analysts, geographers and researchers with over 10 years’
+       experience in analysing, visualizing and communicating the varying distributions of complex
+       data in space and time. We have developed generalized skills in building pipelines for geospatial analysis with feature and
+       raster data. </p> 
+	   
+	   For example, open-source functional programming skills can be applied to contexts where bespoke software has not yet been written,
+	   and is too expensive. The processing and synthesis of raster and feature datasets can be automated to find spatial and statistical 
+	   patterns between variables, visualize output and document both processes and results for different audiences in different contexts.
+    </p>
+  </div>
+  
+  <!-- Spatial Analyses -->
+  <div class="w3-container" id="Spatial Analyses" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Spatial Analysis</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Research-quality analysis of raster and feature data, from local to continental scales</p>
+  ```````````````````  <p>https://github.com/HMB3/habitatIntersect
+    </p>
+  
+  <!-- Functional programming -->
+  <div class="w3-container" id="Functional programming" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-red"><b>Functional programming</b></h1>
+  <hr style="width:50px;border:5px solid red" class="w3-round">
+  <p>Reproducible functional pipelines</p>
+  <p>https://github.com/HMB3/sdmgen
+  </p>
+	
+  <!-- Data integration -->
+  <div class="w3-container" id="Data Integration" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Data Integration</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Automated data aggregation, reporting and visulization for business reporting, surveys, etc.</p>
+    <p>https://hmb3.github.io/Election_day_surveys/
+    </p>
+ 
+  <!-- Reproducible Reporting -->
+  <div class="w3-container" id="Reproducible Reporting" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Reproducible Reporting</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Integrated documentation of methods and outputs</p>
+    <p>https://github.com/HMB3/habitatIntersect
+    </p>
+ 
+  <!-- Collaborative Research -->
+ <div class="w3-container" id="Collaborative Research" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Collaborative Research</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Written communciation across disciplines</p>
+    <p>https://theconversation.com/our-cities-need-more-trees-but-some-commonly-planted-ones-wont-survive-climate-change-120493)
+    </p>
+ 
+ <!-- Statistical modelling -->
+ <div class="w3-container" id="Statistical modelling" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Statistical modelling</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Statistical analyses of spatial data sets to find meaningfull patterns</p>
+    <p>https://theconversation.com/our-cities-need-more-trees-but-some-commonly-planted-ones-wont-survive-climate-change-120493)
+    </p>
+ 
+ 
+  <!-- Biodiver modelling -->
+ <div class="w3-container" id="Biodiversity modelling " style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Biodiversity modelling </b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Macro-ecolgical modelling of suites of species</p>
+    <p>https://www.tandfonline.com/doi/abs/10.1080/13658816.2012.692371
+    </p>
+ 
+ 
+ 
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Got a spatial analysis problem? We love a new challenge :] </p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
