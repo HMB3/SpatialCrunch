@@ -22,17 +22,17 @@ body {font-size:16px;}
     <h3 class="w3-padding-64"><b>SpatialCrunch</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#SpatialCrunch" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SpatialCrunch</a> 
-    <a href="#About" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
-    <a href="#Spatial Analyses" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Spatial Analyses</a> 
-    <a href="#Functional programming" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Functional programming</a> 
-	<a href="#Data Integration" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Data Integration</a>
-    <a href="#Reproducible Reporting" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reproducible Reporting</a>
-    <a href="#Collaborative Research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborative Research</a>
-	<a href="#Statistical Modelling" onclick="w3_close()"  class="w3-bar-item w3-button w3-hover-white">Statistical Modelling</a>	
-    <a href="#Biodiversity Modelling" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Biodiversity Modelling</a>	
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="#"                        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#SpatialCrunch"           onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SpatialCrunch</a> 
+    <a href="#About"                   onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#Spatial Analyses"        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Spatial Analyses</a> 
+    <a href="#Functional pipelines"    onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Functional pipelines</a> 
+	<a href="#Data Integration"        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Data Integration</a>
+    <a href="#Reproducible Reporting"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reproducible Reporting</a>
+    <a href="#Collaborative Research"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborative Research</a>
+	<a href="#Statistical Modelling"   onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statistical Modelling</a>	
+    <a href="#Biodiversity Modelling"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Biodiversity Modelling</a>	
+    <a href="#contact"                 onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
 </nav>
 
@@ -49,38 +49,38 @@ body {font-size:16px;}
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="SpatialCrunch">
+  <div  class="w3-container" style="margin-top:80px" id="SpatialCrunch">
     <h1 class="w3-jumbo"><b>SpatialCrunch</b></h1>
     <h1 class="w3-xxxlarge w3-text-red"><b>Spatial Crunching for public good</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
   
   <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
+  <div   class="w3-row-padding">
     <div class="w3-half">
-      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="https://github.com/HMB3/Beta-Diversity-vs-Productivity/blob/master/docs/fig_1.2.png?raw=true" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="/w3images/livingroom.jpg"      style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="/w3images/diningroom.jpg"      style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
     </div>
 
     <div class="w3-half">
-      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="/w3images/atrium.jpg"      style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="/w3images/bedroom.jpg"     style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
       <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
     </div>
   </div>
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <span  class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div   class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
       <img id="img01" class="w3-image">
-      <p id="caption"></p>
+      <p   id="caption"></p>
     </div>
   </div>
 
   <!-- About -->
-  <div class="w3-container" id="About" style="margin-top:75px">
+  <div  class="w3-container" id="About" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>About</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>SpatialCrunch provides spatial data analysis services, focusing on public interest projects.</p>
@@ -96,23 +96,23 @@ body {font-size:16px;}
   </div>
   
   <!-- Spatial Analyses -->
-  <div class="w3-container" id="Spatial Analyses" style="margin-top:75px">
+  <div  class="w3-container" id="Spatial Analyses" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Spatial Analysis</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Research-quality analysis of raster and feature data, from local to continental scales</p>
     <a href="https://github.com/HMB3/habitatIntersect">Spatial Intersect</a>
     </p>
   
-  <!-- Functional programming -->
-  <div class="w3-container" id="Functional programming" style="margin-top:75px">
-  <h1 class="w3-xxxlarge w3-text-red"><b>Functional programming</b></h1>
-  <hr style="width:50px;border:5px solid red" class="w3-round">
+  <!-- Functional pipelines -->
+  <div class="w3-container" id="Functional pipelines" style="margin-top:75px">
+  <h1  class="w3-xxxlarge w3-text-red"><b>Functional pipelines</b></h1>
+  <hr  style="width:50px;border:5px solid red" class="w3-round">
   <p>Reproducible functional pipelines</p>
   <a href="https://github.com/HMB3/sdmgen">Habitat Models</a> 
   </p>
 	
   <!-- Data integration -->
-  <div class="w3-container" id="Data Integration" style="margin-top:75px">
+  <div  class="w3-container" id="Data Integration" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Data Integration</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Automated data aggregation, reporting and visulization<p>
@@ -120,7 +120,7 @@ body {font-size:16px;}
     </p>
  
   <!-- Reproducible Reporting -->
-  <div class="w3-container" id="Reproducible Reporting" style="margin-top:75px">
+  <div  class="w3-container" id="Reproducible Reporting" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Reproducible Reporting</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Integrated documentation of methods and outputs</p>
@@ -128,7 +128,7 @@ body {font-size:16px;}
     </p>
  
   <!-- Collaborative Research -->
- <div class="w3-container" id="Collaborative Research" style="margin-top:75px">
+ <div   class="w3-container" id="Collaborative Research" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Collaborative Research</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Interdisciplinary communciation</p>
@@ -136,7 +136,7 @@ body {font-size:16px;}
     </p>
  
  <!-- Statistical modelling -->
- <div class="w3-container" id="Statistical modelling" style="margin-top:75px">
+ <div   class="w3-container" id="Statistical modelling" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Statistical modelling</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Statistical analyses of spatial data sets</p>
@@ -145,7 +145,7 @@ body {font-size:16px;}
  
  
   <!-- Biodiver modelling -->
- <div class="w3-container" id="Biodiversity modelling " style="margin-top:75px">
+ <div   class="w3-container" id="Biodiversity modelling " style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Biodiversity modelling </b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Macro-ecolgical modelling of suites of species</p>
@@ -155,7 +155,7 @@ body {font-size:16px;}
  
  
   <!-- Contact -->
-  <div class="w3-container" id="contact" style="margin-top:75px">
+  <div  class="w3-container" id="contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Got a spatial analysis problem? We love a new challenge :] </p>
