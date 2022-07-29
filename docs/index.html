@@ -1,196 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
-</head>
-<body>
+  <html lang="en">
+  <head>
+    <title>SpatialCrunch | Geographic data crunching for public good</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+      <br />
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+      <div class="w3-container">
+        <h3 class="w3-padding-64">
+          <b>SpatialCrunch</b>
+        </h3>
+      </div>
+      <div class="w3-bar-block">
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+        <a href="#SpatialCrunch" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SpatialCrunch</a> 
+        <a href="#About" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+        <a href="#Spatial Analyses" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Spatial Analyses</a> 
+        <a href="#Functional pipelines" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Functional pipelines</a> 
+        <a href="#Data Integration" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Data Integration</a>
+        <a href="#Reproducible Reporting" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reproducible Reporting</a>
+        <a href="#Collaborative Research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborative Research</a>
+        <a href="#Statistical Modelling" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statistical Modelling</a>	
+        <a href="#Biodiversity Modelling" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Biodiversity Modelling</a>	
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+      </div>
+    </nav>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>SpatialCrunch</b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#"                        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#SpatialCrunch"           onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SpatialCrunch</a> 
-    <a href="#About"                   onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
-    <a href="#Spatial Analyses"        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Spatial Analyses</a> 
-    <a href="#Functional pipelines"    onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Functional pipelines</a> 
-	<a href="#Data Integration"        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Data Integration</a>
-    <a href="#Reproducible Reporting"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Reproducible Reporting</a>
-    <a href="#Collaborative Research"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Collaborative Research</a>
-	<a href="#Statistical Modelling"   onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statistical Modelling</a>	
-    <a href="#Biodiversity Modelling"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Biodiversity Modelling</a>	
-    <a href="#contact"                 onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
-  </div>
-</nav>
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+      <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+      <span>SpatialCrunch</span>
+    </header>
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>SpatialCrunch</span>
-</header>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <!-- Page Content -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div  class="w3-container" style="margin-top:80px" id="SpatialCrunch">
-    <h1 class="w3-jumbo"><b>SpatialCrunch</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Geographic data crunching for public good</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-  </div>
+      <!-- Header -->
+      <div class="w3-container" style="margin-top:80px" id="SpatialCrunch">
+        <h1 class="w3-jumbo"><b>SpatialCrunch</b></h1>
+        <h1 class="w3-xxxlarge w3-text-red"><b>Geographic data crunching for public good</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+      </div>
   
-  <!-- Photo grid (modal) -->
-  <div   class="w3-row-padding">
-    <div class="w3-half">
-      <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/biogeography_slide.png?raw=true" style="width:100%" onclick="onClick(this)" alt="Primary Producvitiy vs. Niche width">
-      <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/EC_slides.png?raw=true"          style="width:100%" onclick="onClick(this)" alt="Election Survey Analyses">
-      <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/SDM_slides.png?raw=true"         style="width:100%" onclick="onClick(this)" alt="Habitat-Fire intersects">
-    </div>
+      <!-- Photo grid (modal) -->
+      <div class="w3-row-padding">
+        <div class="w3-half">
+          <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/biogeography_slide.png?raw=true" style="width:100%" onclick="onClick(this)" alt="Primary Producvitiy vs. Niche width">
+          <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/EC_slides.png?raw=true" style="width:100%" onclick="onClick(this)" alt="Election Survey Analyses">
+          <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/SDM_slides.png?raw=true" style="width:100%" onclick="onClick(this)" alt="Habitat-Fire intersects">
+        </div>
 
-    <div class="w3-half">
-      <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/dash_boards.png?raw=true"        style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/biogeography_slide.png?raw=true" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/burn_map.png?raw=true"           style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
-  </div>
+        <div class="w3-half">
+          <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/dash_boards.png?raw=true" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+          <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/biogeography_slide.png?raw=true" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+          <img src="https://github.com/HMB3/SpatialCrunch/blob/main/docs/burn_map.png?raw=true" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+        </div>
+      </div>
 
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span  class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div   class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p   id="caption"></p>
-    </div>
-  </div>
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img alt="" id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
 
-  <!-- About -->
-  <div  class="w3-container" id="About" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>About</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>SpatialCrunch provides spatial data analysis services, focusing on public interest projects.</p>
-    <p>We are an interdisciplinary team of spatial analysts, geographers and researchers with over 10 years’
-       experience in analysing, visualizing and communicating the varying distributions of complex
-       data in space and time. We have developed generalized skills in building pipelines for geospatial analysis with feature and
-       raster data. </p> 
-	   
-	   For example, open-source functional programming skills can be applied to contexts where bespoke software has not yet been written,
-	   and is too expensive. The processing and synthesis of raster and feature datasets can be automated to find spatial and statistical 
-	   patterns between variables, visualize output and document both processes and results for different audiences in different contexts.
-    </p>
-  </div>
+      <!-- About -->
+      <div class="w3-container" id="About" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>About</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round" />
+        <p>SpatialCrunch provides spatial data analysis services, focusing on public interest projects.</p>
+        <p>We are an interdisciplinary team of spatial analysts, geographers and researchers with over 10 years experience in analysing, visualizing and communicating the varying distributions of complex data in space and time. We have developed generalized skills in building pipelines for geospatial analysis with feature and raster data.</p>
+        <p>For example, open-source functional programming skills can be applied to contexts where bespoke software has not yet been written, and is too expensive. The processing and synthesis of raster and feature datasets can be automated to find spatial and statistical patterns between variables, visualize output and document both processes and results for different audiences in different contexts.</p>
+      </div>
   
-  <!-- Spatial Analyses -->
-  <div  class="w3-container" id="Spatial Analyses" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Spatial Analysis</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Research-quality analysis of raster and feature data, from local to continental scales</p>
-    <a href="https://github.com/HMB3/habitatIntersect">Habitat-fire intersects</a>
-    </p>
+      <!-- Spatial Analyses -->
+      <div class="w3-container" id="Spatial Analyses" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Spatial Analysis</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round" />
+        <p>Research-quality analysis of raster and feature data, from local to continental scales</p>
+        <a href="https://github.com/HMB3/habitatIntersect">Habitat-fire intersects</a>
+      </div>
   
-  <!-- Functional pipelines -->
-  <div class="w3-container" id="Functional pipelines" style="margin-top:75px">
-  <h1  class="w3-xxxlarge w3-text-red"><b>Functional pipelines</b></h1>
-  <hr  style="width:50px;border:5px solid red" class="w3-round">
-  <p>Reproducible pipelines of functional, object-orientated programming</p>
-  <a href="https://github.com/HMB3/sdmgen">Habitat models</a> 
-  </p>
+      <!-- Functional pipelines -->
+      <div class="w3-container" id="Functional pipelines" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Functional pipelines</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round" />
+        <p>Reproducible pipelines of functional, object-orientated programming</p>
+        <a href="https://github.com/HMB3/sdmgen">Habitat models</a> 
+      </div>
 	
-  <!-- Data integration -->
-  <div  class="w3-container" id="Data Integration" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Data Integration</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Automated data aggregation, reporting and visulization<p>
-    <a href="https://hmb3.github.io/Election_day_surveys/">Election surveys</a><p>
-    <a href="https://hmb3.github.io/Election_dashboards/">Election dashboards</a>	
-    </p>
- 
-  <!-- Reproducible Reporting -->
-  <div  class="w3-container" id="Reproducible Reporting" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Reproducible Reporting</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Integrated documentation of methods and outputs</p>
-    <a href="https://hmb3.github.io/Beta-Diversity-vs-Productivity/">Bookdown methods</a> 
-    </p>
- 
-  <!-- Collaborative Research -->
- <div   class="w3-container" id="Collaborative Research" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Collaborative Research</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Interdisciplinary communciation</p>
-    <a href="https://theconversation.com/our-cities-need-more-trees-but-some-commonly-planted-ones-wont-survive-climate-change-120493">Planting Urban Trees</a></p>
-    <a href="https://doi.org/10.1016/j.scitotenv.2019.05.287">Urban Tree Decline</a> </p>
-	<a href="http://dx.doi.org/10.1016/j.rbmo.2016.07.012">IVF uptake by postcode</a> 
-	</p>
- 
- <!-- Statistical modelling -->
- <div   class="w3-container" id="Statistical modelling" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Statistical modelling</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Statistical analyses of spatial data sets</p>
-    <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/geb.12487">Productivity vs. Diversity</a> 
-    </p>
- 
- 
-  <!-- Biodiversity analyses -->
- <div   class="w3-container" id="Biodiversity analyses " style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Biodiversity analyses </b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Macro-ecolgical modelling of large suites of species</p>
-    <a href="https://www.tandfonline.com/doi/abs/10.1080/13658816.2012.692371">Beta diversity across Eastern Australia</a> 
-    </p>
- 
- 
- 
-  <!-- Contact -->
-  <div  class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Got a spatial analysis problem? We love a new challenge :] </p>
-    <a href="mailto:hugh.burley@gmail.com">send us an email</a> 
-  </div>
+      <!-- Data integration -->
+      <div class="w3-container" id="Data Integration" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Data Integration</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round" />
+        <p>Automated data aggregation, reporting and visulization</p>
+        <a href="https://hmb3.github.io/Election_day_surveys/">Election surveys</a>
+        <a href="https://hmb3.github.io/Election_dashboards/">Election dashboards</a>	
+      </div>
 
-<!-- End page content -->
-</div>
+      <!-- Reproducible Reporting -->
+      <div class="w3-container" id="Reproducible Reporting" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Reproducible Reporting</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round" />
+        <p>Integrated documentation of methods and outputs</p>
+        <a href="https://hmb3.github.io/Beta-Diversity-vs-Productivity/">Bookdown methods</a> 
+      </div>
 
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+      <!-- Collaborative Research -->
+      <div class="w3-container" id="Collaborative Research" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Collaborative Research</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round" />
+        <p>Interdisciplinary communciation</p>
+        <a href="https://theconversation.com/our-cities-need-more-trees-but-some-commonly-planted-ones-wont-survive-climate-change-120493">Planting Urban Trees</a>
+        <a href="https://doi.org/10.1016/j.scitotenv.2019.05.287">Urban Tree Decline</a>
+        <a href="http://dx.doi.org/10.1016/j.rbmo.2016.07.012">IVF uptake by postcode</a> 
+      </div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+      <!-- Statistical modelling -->
+      <div class="w3-container" id="Statistical modelling" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Statistical modelling</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round" />
+        <p>Statistical analyses of spatial data sets</p>
+        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/geb.12487">Productivity vs. Diversity</a> 
+      </div>
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
+      <!-- Biodiversity analyses -->
+      <div class="w3-container" id="Biodiversity analyses" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Biodiversity analyses </b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round" />
+        <p>Macro-ecolgical modelling of large suites of species</p>
+        <a href="https://www.tandfonline.com/doi/abs/10.1080/13658816.2012.692371">Beta diversity across Eastern Australia</a> 
+      </div>
 
-</body>
+      <!-- Contact -->
+      <div class="w3-container" id="contact" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round" />
+        <p>Got a spatial analysis problem? We love a new challenge :]</p>
+        <a href="mailto:hugh.burley@gmail.com">send us an email</a> 
+      </div>
+    </div>
+
+    <!-- W3.CSS Container -->
+    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+      <p class="w3-right">
+        Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+      </p>
+    </div>
+
+    <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
+  </body>
 </html>
